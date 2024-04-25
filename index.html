@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Aniversario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Aniversario</h1>
+        <div id="preguntas">
+            <p>¿Cuál es mi color favorito?</p>
+            <select id="colorInput">
+                <option value="">Selecciona una opción</option>
+                <option value="verde">Verde</option>
+                <option value="rojo">Rojo</option>
+                <option value="azul">Negro</option>
+                <option value="amarillo">Amarillo</option>
+                <option value="otro">Otro</option>
+            </select>
+            <p>¿Comida Favorita?</p>
+            <select id="comidaInput">
+                <option value="">Selecciona una opción</option>
+                <option value="baleadas">Baleadas</option>
+                <option value="carne">Carne</option>
+                <option value="pollo">Pollo</option>
+                <option value="pizza">Pizza</option>
+                <option value="otro">Otro</option>
+            </select>
+            <p>¿Quién de los dos es más chismoso, Andy o Cinthya?</p>
+            <select id="chismosoInput">
+                <option value="">Selecciona una opción</option>
+                <option value="andy">Andy</option>
+                <option value="cinthya">Cinthya</option>
+            </select>
+            <p>¿Quién de los dos es más llorón?</p>
+            <select id="lloronInput">
+                <option value="">Selecciona una opción</option>
+                <option value="andy">Andy</option>
+                <option value="cinthya">Cinthya</option>
+            </select>
+            <p>¿Quién de los dos es mas Chistoso?</p>
+            <select id="chistosInput">
+                <option value="">Selecciona una opción</option>
+                <option value="andy">Andy</option>
+                <option value="cinthya">Cinthya</option>
+            </select>
+            <button onclick="calcularResultado()">¡Ver Resultado!</button>
+        </div>
+        <div id="resultado" style="display: none;">
+            <p id="mensajeResultado"></p>
+            <img src="aniversary.jpg" alt="Feliz Aniversario #3 ">
+            <h1>TE AMO</h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
